@@ -1,8 +1,7 @@
 {
-  "name": "my-team-plugin-marketplace",
+  "name": "claude-mcp",
   "owner": {
-    "name": "Your Organization",
-    "email": "team@your-org.com"
+    "name": "claude-contrib"
   },
   "metadata": {
     "description": "A curated collection of Claude Code plugins for our team",
@@ -10,28 +9,40 @@
   },
   "plugins": [
     {
-      "name": "hello-world",
-      "description": "A simple example plugin demonstrating basic Claude Code plugin functionality",
+      "name": "thinking-mcp",
+      "description": "Sequential thinking MCP server for structured problem analysis",
       "version": "1.0.0",
       "author": {
-        "name": "Your Team"
+        "name": "claude-contrib"
       },
-      "source": "./plugins/hello-world",
-      "category": "examples",
-      "tags": ["example", "tutorial", "getting-started"],
-      "keywords": ["example", "tutorial", "getting-started"]
+      "source": "./plugins/thinking-mcp",
+      "category": "mcp-servers",
+      "tags": ["mcp", "thinking", "analysis", "problem-solving"],
+      "keywords": ["mcp", "sequential-thinking", "analysis"]
     },
     {
-      "name": "plugin-development",
-      "description": "Assist with Claude Code plugin development: scaffold, validate, review, and team-ready distribution",
-      "version": "1.1.0",
+      "name": "filesystem-mcp",
+      "description": "Filesystem MCP server for file operations",
+      "version": "1.0.0",
       "author": {
-        "name": "Ivan Magda"
+        "name": "claude-contrib"
       },
-      "source": "./plugins/plugin-development",
-      "category": "developer-tools",
-      "tags": ["development", "plugins", "scaffold", "validation", "tools"],
-      "keywords": ["claude-code", "plugins", "developer-tools", "scaffold", "validation"]
+      "source": "./plugins/filesystem-mcp",
+      "category": "mcp-servers",
+      "tags": ["mcp", "filesystem", "files", "directories"],
+      "keywords": ["mcp", "filesystem", "file-operations"]
+    },
+    {
+      "name": "playwright-mcp",
+      "description": "Playwright MCP server for browser automation",
+      "version": "1.0.0",
+      "author": {
+        "name": "claude-contrib"
+      },
+      "source": "./plugins/playwright-mcp",
+      "category": "mcp-servers",
+      "tags": ["mcp", "playwright", "browser", "automation"],
+      "keywords": ["mcp", "playwright", "browser-automation"]
     }
   ]
 }

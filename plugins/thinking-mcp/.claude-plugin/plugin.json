@@ -1,0 +1,7 @@
+{
+  "name": "thinking-mcp",
+  "description": "Sequential thinking MCP server for structured problem analysis",
+  "author": {
+    "name": "claude-contrib"
+  }
+}

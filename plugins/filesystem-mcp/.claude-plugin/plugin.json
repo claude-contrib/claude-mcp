@@ -1,0 +1,7 @@
+{
+  "name": "filesystem-mcp",
+  "description": "Filesystem MCP server for file operations",
+  "author": {
+    "name": "claude-contrib"
+  }
+}

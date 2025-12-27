@@ -1,0 +1,7 @@
+{
+  "name": "playwright-mcp",
+  "description": "Playwright MCP server for browser automation",
+  "author": {
+    "name": "claude-contrib"
+  }
+}
