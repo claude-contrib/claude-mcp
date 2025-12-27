@@ -14,11 +14,11 @@ This plugin provides the `@modelcontextprotocol/server-filesystem` MCP server.
 
 ## Configuration
 
-Set the `FILESYSTEM_ALLOWED_PATHS` environment variable to configure which directories the server can access.
+Set the `CLAUDE_FILESYSTEM_ALLOWED_DIRS` environment variable to configure which directories the server can access.
 
 ```bash
 # In your shell profile (.bashrc, .zshrc, etc.)
-export FILESYSTEM_ALLOWED_PATHS="$HOME/Projects $HOME/Documents"
+export CLAUDE_FILESYSTEM_ALLOWED_DIRS="$HOME/Projects $HOME/Documents"
 ```
 
 **Default:** `$HOME/Projects` if not set.
