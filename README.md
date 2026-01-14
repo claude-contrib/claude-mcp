@@ -1,6 +1,6 @@
-# Claude MCP Plugins
+# Claude Services
 
-A collection of MCP server plugins for Claude Code.
+A collection of service plugins for Claude Code.
 
 ## Installation
 
@@ -12,7 +12,7 @@ Add the marketplace to your Claude Code settings (`~/.claude/settings.json`):
     "claude-mcp": {
       "source": {
         "source": "github",
-        "repo": "claude-contrib/claude-mcp"
+        "repo": "claude-contrib/claude-services"
       }
     }
   }
@@ -22,7 +22,7 @@ Add the marketplace to your Claude Code settings (`~/.claude/settings.json`):
 Then install plugins:
 
 ```text
-/plugin install <plugin-name>@claude-mcp
+/plugin install <plugin-name>@claude-services
 ```
 
 ## Available Plugins

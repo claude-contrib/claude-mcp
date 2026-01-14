@@ -1,5 +1,5 @@
 {
-  "name": "claude-mcp",
+  "name": "claude-services",
   "owner": {
     "name": "claude-contrib"
   },
@@ -17,8 +17,17 @@
       },
       "source": "./plugins/thinking-mcp",
       "category": "mcp-servers",
-      "tags": ["mcp", "thinking", "analysis", "problem-solving"],
-      "keywords": ["mcp", "sequential-thinking", "analysis"]
+      "tags": [
+        "mcp",
+        "thinking",
+        "analysis",
+        "problem-solving"
+      ],
+      "keywords": [
+        "mcp",
+        "sequential-thinking",
+        "analysis"
+      ]
     },
     {
       "name": "filesystem-mcp",
@@ -29,8 +38,17 @@
       },
       "source": "./plugins/filesystem-mcp",
       "category": "mcp-servers",
-      "tags": ["mcp", "filesystem", "files", "directories"],
-      "keywords": ["mcp", "filesystem", "file-operations"]
+      "tags": [
+        "mcp",
+        "filesystem",
+        "files",
+        "directories"
+      ],
+      "keywords": [
+        "mcp",
+        "filesystem",
+        "file-operations"
+      ]
     },
     {
       "name": "playwright-mcp",
@@ -41,8 +59,17 @@
       },
       "source": "./plugins/playwright-mcp",
       "category": "mcp-servers",
-      "tags": ["mcp", "playwright", "browser", "automation"],
-      "keywords": ["mcp", "playwright", "browser-automation"]
+      "tags": [
+        "mcp",
+        "playwright",
+        "browser",
+        "automation"
+      ],
+      "keywords": [
+        "mcp",
+        "playwright",
+        "browser-automation"
+      ]
     }
   ]
 }
