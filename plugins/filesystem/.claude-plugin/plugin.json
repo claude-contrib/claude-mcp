@@ -1,7 +1,7 @@
 {
-  "name": "playwright-mcp",
+  "name": "filesystem",
   "version": "1.0.0",
-  "description": "Playwright MCP server for browser automation",
+  "description": "Filesystem MCP server for file operations",
   "author": {
     "name": "claude-contrib",
     "email": "claude-contrib@github.com",
@@ -12,8 +12,8 @@
   "license": "MIT",
   "keywords": [
     "mcp",
-    "playwright",
-    "browser-automation",
-    "testing"
+    "filesystem",
+    "file-operations",
+    "directories"
   ]
 }

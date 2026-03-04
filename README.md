@@ -40,9 +40,9 @@ Claude now has browser automation tools available in every session.
 
 | Service | Description | Tools unlocked |
 |---------|-------------|----------------|
-| [`thinking-mcp`](plugins/thinking-mcp/README.md) | Sequential thinking for structured problem analysis | Break down complex problems step by step before acting |
-| [`filesystem-mcp`](plugins/filesystem-mcp/README.md) | Filesystem access beyond the working directory | Read, write, and navigate files across your system |
-| [`playwright-mcp`](plugins/playwright-mcp/README.md) | Full browser automation via Playwright | Navigate pages, click, fill forms, take screenshots |
+| [`thinking`](plugins/thinking/README.md) | Sequential thinking for structured problem analysis | Break down complex problems step by step before acting |
+| [`filesystem`](plugins/filesystem/README.md) | Filesystem access beyond the working directory | Read, write, and navigate files across your system |
+| [`playwright`](plugins/playwright/README.md) | Full browser automation via Playwright | Navigate pages, click, fill forms, take screenshots |
 
 ## Publish Your Own Service
 
