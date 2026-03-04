@@ -1,6 +1,6 @@
 {
   "sequential-thinking": {
     "command": "npx",
-    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking@2025.12.18"]
   }
 }
