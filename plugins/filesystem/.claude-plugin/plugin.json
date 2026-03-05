@@ -1,0 +1,19 @@
+{
+  "name": "filesystem",
+  "version": "1.0.0",
+  "description": "Filesystem MCP server for file operations",
+  "author": {
+    "name": "claude-contrib",
+    "email": "claude-contrib@github.com",
+    "url": "https://github.com/claude-contrib"
+  },
+  "homepage": "https://github.com/claude-contrib/claude-services",
+  "repository": "https://github.com/claude-contrib/claude-services",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "filesystem",
+    "file-operations",
+    "directories"
+  ]
+}

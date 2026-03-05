@@ -1,0 +1,20 @@
+{
+  "name": "thinking",
+  "version": "1.0.0",
+  "description": "Sequential thinking MCP server for structured problem analysis",
+  "author": {
+    "name": "claude-contrib",
+    "email": "claude-contrib@github.com",
+    "url": "https://github.com/claude-contrib"
+  },
+  "homepage": "https://github.com/claude-contrib/claude-services",
+  "repository": "https://github.com/claude-contrib/claude-services",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "sequential-thinking",
+    "analysis",
+    "problem-solving",
+    "reasoning"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Playwright MCP server for browser automation",
+  "author": {
+    "name": "claude-contrib",
+    "email": "claude-contrib@github.com",
+    "url": "https://github.com/claude-contrib"
+  },
+  "homepage": "https://github.com/claude-contrib/claude-services",
+  "repository": "https://github.com/claude-contrib/claude-services",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "playwright",
+    "browser-automation",
+    "testing"
+  ]
+}
