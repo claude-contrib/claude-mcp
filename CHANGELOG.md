@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/claude-contrib/claude-services/compare/v2.0.0...v2.0.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* **thinking:** add reasoning keyword to plugin metadata ([bf5d1c5](https://github.com/claude-contrib/claude-services/commit/bf5d1c5b96815624d8ac77658417c515be9b4cc2))
+
 ## [2.0.0](https://github.com/claude-contrib/claude-services/compare/v1.1.0...v2.0.0) (2026-03-04)
 
 
