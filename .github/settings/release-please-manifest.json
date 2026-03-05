@@ -1,6 +1,6 @@
 {
-  ".": "2.0.0",
-  "plugins/thinking": "1.0.0",
-  "plugins/filesystem": "1.0.0",
-  "plugins/playwright": "1.0.0"
+  ".": "2.0.1",
+  "plugins/thinking": "2.0.0",
+  "plugins/filesystem": "2.0.0",
+  "plugins/playwright": "2.0.0"
 }
