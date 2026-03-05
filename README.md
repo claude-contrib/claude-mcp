@@ -68,6 +68,7 @@ plugins/your-service/
 |-------------|------------|-----------------|
 | [claude-extensions](https://github.com/claude-contrib/claude-extensions) | `@claude-extensions` | Hooks, context rules, session automation |
 | **claude-services** ← you are here | `@claude-services` | MCP servers — browser, filesystem, sequential thinking |
+| [claude-languages](https://github.com/claude-contrib/claude-languages) | `@claude-languages` | LSP language servers — completions, diagnostics, hover |
 
 ## License
 
