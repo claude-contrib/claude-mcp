@@ -2,7 +2,7 @@ name: Validate
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -14,9 +14,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-
-      - name: Setup jq
-        uses: dcarbone/install-jq-action@v3
 
       - name: Validate marketplace.json
         run: |
@@ -69,9 +66,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Setup jq
-        uses: dcarbone/install-jq-action@v3
-
       - name: Validate marketplace plugin entries
         run: |
           echo "Validating marketplace plugin entries..."
@@ -121,9 +115,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-
-      - name: Setup jq
-        uses: dcarbone/install-jq-action@v3
 
       - name: Validate each plugin
         run: |
@@ -232,9 +223,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-
-      - name: Setup jq
-        uses: dcarbone/install-jq-action@v3
 
       - name: Check for duplicate names
         run: |
