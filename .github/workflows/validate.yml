@@ -13,11 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - run: pip install check-jsonschema==0.31.3
+
       - name: Validate marketplace.json
-        uses: python-jsonschema/check-jsonschema@0.31.3
-        with:
-          schemafile: .github/schemas/marketplace.schema.json
-          instancefiles: .claude-plugin/marketplace.json
+        run: check-jsonschema --schemafile .github/schemas/marketplace.schema.json .claude-plugin/marketplace.json
 
   validate-plugins:
     name: Validate Plugins
@@ -25,11 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - run: pip install check-jsonschema==0.31.3
+
       - name: Validate plugin.json files
-        uses: python-jsonschema/check-jsonschema@0.31.3
-        with:
-          schemafile: .github/schemas/plugin.schema.json
-          instancefiles: plugins/*/.claude-plugin/plugin.json
+        run: check-jsonschema --schemafile .github/schemas/plugin.schema.json plugins/*/.claude-plugin/plugin.json
 
       - name: Check each plugin listed in marketplace has a directory
         run: |
