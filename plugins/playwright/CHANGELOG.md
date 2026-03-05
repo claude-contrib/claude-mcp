@@ -1,0 +1,8 @@
+# Changelog
+
+## [1.1.0](https://github.com/claude-contrib/claude-services/compare/playwright-v1.0.0...playwright-v1.1.0) (2026-03-05)
+
+
+### Features
+
+* add marketplace with thinking, filesystem, and playwright plugins ([023fc2c](https://github.com/claude-contrib/claude-services/commit/023fc2cbf062fa99e36224ce24bbf92b72488eab))
