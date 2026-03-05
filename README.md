@@ -68,7 +68,6 @@ plugins/your-service/
 |-------------|------------|-----------------|
 | [claude-extensions](https://github.com/claude-contrib/claude-extensions) | `@claude-extensions` | Hooks, context rules, session automation |
 | **claude-services** ← you are here | `@claude-services` | MCP servers — browser, filesystem, sequential thinking |
-| [claude-skills](https://github.com/claude-contrib/claude-skills) | `@claude-skills` | Slash commands — `/commit`, and more |
 
 ## License
 
