@@ -29,6 +29,22 @@ jobs:
       - name: Validate plugin.json files
         run: check-jsonschema --schemafile .github/schemas/plugin.schema.json plugins/*/.claude-plugin/plugin.json
 
+      - name: Validate .mcp.json files
+        run: check-jsonschema --schemafile .github/schemas/mcp.schema.json plugins/*/.mcp.json
+
+      - name: Check no unpinned versions in .mcp.json
+        run: |
+          error=0
+          for f in plugins/*/.mcp.json; do
+            if grep -qE '"@latest|"@\^|"@~' "$f"; then
+              echo "✗ $f contains an unpinned version (@latest, ^, or ~)"
+              error=1
+            else
+              echo "✓ $f versions are pinned"
+            fi
+          done
+          exit $error
+
       - name: Check each plugin listed in marketplace has a directory
         run: |
           error=0
@@ -41,6 +57,21 @@ jobs:
               echo "✓ $source"
             fi
           done < <(jq -r '.plugins[].source' .claude-plugin/marketplace.json)
+          exit $error
+
+      - name: Check plugin.json versions match marketplace entries
+        run: |
+          error=0
+          while IFS= read -r name; do
+            marketplace_ver=$(jq -r --arg n "$name" '.plugins[] | select(.name == $n) | .version' .claude-plugin/marketplace.json)
+            plugin_ver=$(jq -r '.version' "plugins/${name}/.claude-plugin/plugin.json")
+            if [ "$marketplace_ver" != "$plugin_ver" ]; then
+              echo "✗ Version mismatch for '$name': marketplace=$marketplace_ver plugin.json=$plugin_ver"
+              error=1
+            else
+              echo "✓ $name version $plugin_ver in sync"
+            fi
+          done < <(jq -r '.plugins[].name' .claude-plugin/marketplace.json)
           exit $error
 
   check-duplicates:

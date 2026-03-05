@@ -20,6 +20,8 @@
           packages = with pkgs; [
             nodejs_22 # MCP servers run via npx
             jq # JSON manifest validation (mirrors CI)
+            git
+            gh # GitHub CLI
           ];
         };
       }

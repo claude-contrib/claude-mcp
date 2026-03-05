@@ -90,6 +90,8 @@ The top-level key becomes the server's identifier in Claude Code.
 
 ## Registering in `marketplace.json`
 
+Add an entry to the `plugins` array in `.claude-plugin/marketplace.json`:
+
 ```json
 {
   "name": "your-service",
@@ -102,6 +104,8 @@ The top-level key becomes the server's identifier in Claude Code.
   "keywords": ["mcp", "relevant", "keywords"]
 }
 ```
+
+The `version` field here must stay in sync with the `version` in your `plugin.json` — CI enforces this. Both are updated automatically by release-please when a release is cut.
 
 ## Testing Locally
 
@@ -132,18 +136,22 @@ To iterate:
 
 Every pull request runs `.github/workflows/validate.yml` which checks:
 
-- `marketplace.json` is valid JSON with required fields (`name`, `owner`, `plugins`)
-- Each plugin entry has `name` and `source`
-- Each plugin directory exists
-- `plugin.json` is valid JSON with a `name` field
+- `marketplace.json` validates against `.github/schemas/marketplace.schema.json`
+- Each `plugin.json` validates against `.github/schemas/plugin.schema.json`
+- Each `.mcp.json` validates against `.github/schemas/mcp.schema.json`
+- No unpinned versions (`@latest`, `^`, `~`) in `.mcp.json`
+- Each plugin source directory listed in the marketplace exists
+- `plugin.json` version matches the marketplace entry version
 - No duplicate plugin names
 
-Run the same checks locally with `jq`:
+Run the same checks locally:
 
 ```bash
-jq empty .claude-plugin/marketplace.json
-jq empty plugins/your-service/.claude-plugin/plugin.json
-jq empty plugins/your-service/.mcp.json
+pip install check-jsonschema
+
+check-jsonschema --schemafile .github/schemas/marketplace.schema.json .claude-plugin/marketplace.json
+check-jsonschema --schemafile .github/schemas/plugin.schema.json plugins/your-service/.claude-plugin/plugin.json
+check-jsonschema --schemafile .github/schemas/mcp.schema.json plugins/your-service/.mcp.json
 ```
 
 ## Official References
