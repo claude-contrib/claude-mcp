@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/claude-contrib/claude-services/compare/v1.1.0...v1.1.1) (2026-03-06)
+
+
+### Bug Fixes
+
+* **release:** add checkout step, fix extra-files paths, remove skip-github-release ([7771640](https://github.com/claude-contrib/claude-services/commit/7771640e2a5f51aedfdbe280f2e112ddb5f1901a))
+* **release:** sync manifest plugin versions to match plugin.json state ([aa290ac](https://github.com/claude-contrib/claude-services/commit/aa290ac14623b241987de1e6bb8b075d3c96ac1b))
+
 ## [1.1.0](https://github.com/claude-contrib/claude-services/compare/v1.0.0...v1.1.0) (2026-03-05)
 
 
